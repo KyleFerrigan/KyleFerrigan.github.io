@@ -1,9 +1,286 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html class="h-full bg-white" lang="en">
+    <head>
+        <meta name="csrf-param" content="authenticity_token"/>
+        <meta name="csrf-token" content="rpH1x0HfJd8Lf8z9gOE2hpT4RdCyXqfRWsIYdbddGBn47AZXiiRFEaV_-QvTKZYdp7PeZjcBjPKtxDbRBs_2LA"/>
+        <link rel="stylesheet" href="https://assets.postcard.page/assets/tailwind-717aa5855d3b54b495cc734abec3cec48cbf9472b5f0d3a2bbcd81c484e36435.css" data-turbo-track="reload"/>
+        <link rel="stylesheet" href="https://assets.postcard.page/assets/inter-font-56e5c1eebdf3854ae2085a990f3d286d874f8f5a65c4390ab1e931fce60cd034.css" data-turbo-track="reload"/>
+        <link rel="stylesheet" href="https://assets.postcard.page/assets/application.tailwind-f8a070e2276114e1a5193f5cd06030bd608bba1d624e5998fbfea6cfc23c9ef5.css" data-turbo-track="reload"/>
+        <script>
+            window.process = {
+                env: {}
+            }
+        </script>
+        <script type="importmap" data-turbo-track="reload">
+            {
+                "imports": {
+                    "application": "https://assets.postcard.page/assets/application-e5a1beee0f4af93aec7b106fcc803c0d9b376bb52391c605f675882614cc41a6.js",
+                    "dashboard": "https://assets.postcard.page/assets/dashboard-81782f83c5d002f816c94d9ec67a21a5fb6aa22260a2ac07bcea9fe8f4a1cf17.js",
+                    "@hotwired/turbo-rails": "https://assets.postcard.page/assets/turbo.min-6d55e406d913e0952fed2265f39e12838148732f9c3e8c6e026d7b76e2faeea4.js",
+                    "@hotwired/stimulus": "https://assets.postcard.page/assets/@hotwired--stimulus-fecc3ec70c869283b134b7ae939fb6c94a16e6ae57286ffe3c6181f2a747cbae.js",
+                    "@hotwired/stimulus-loading": "https://assets.postcard.page/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js",
+                    "@rails/actiontext": "https://assets.postcard.page/assets/actiontext-28c61f5197c204db043317a8f8826a87ab31495b741f854d307ca36122deefce.js",
+                    "tailwindcss-stimulus-components": "https://assets.postcard.page/assets/tailwindcss-stimulus-components-acdb5a32ab7451a3741d67f23c0c0338a0e867021915db3f323f19c8f601a6ac.js",
+                    "ahoy.js": "https://assets.postcard.page/assets/ahoy.js-3cacce50c4d45900e2a1869755ac97640a12385e905c7a1db9dbf9bbb33191db.js",
+                    "clipboard": "https://assets.postcard.page/assets/clipboard-90e4dc523c2b03c3455a0fbd8a56f76fbcf720363dc8b8d12c12b6eeb7b4bd97.js",
+                    "stimulus-notification": "https://assets.postcard.page/assets/stimulus-notification-f7fe7107d7482bb657b9d4682f8878b23e2b720ebfc496785acb0aee67f70b8f.js",
+                    "@rails/activestorage": "https://assets.postcard.page/assets/@rails--activestorage-5c8d84ec504a53ac574def28e80b50a2b9a1e2b8fcb65e75cea0887a9212ddd8.js",
+                    "local-time-cdn": "https://assets.postcard.page/assets/local-time-cdn-49233f9905a09c73951110621c274f98384e683ef4422802c596d845ab403231.js",
+                    "lodash.debounce": "https://assets.postcard.page/assets/lodash.debounce-2156bf30ba16dc64d0a818939b8e57cdf77d41a745a42acdeb675024d8b8190d.js",
+                    "stimulus-dropdown": "https://assets.postcard.page/assets/stimulus-dropdown-c22aa432c058a134a0fcd4dfd4cdaf627a67b13b47000c246b959c8811e457b5.js",
+                    "stimulus-use": "https://assets.postcard.page/assets/stimulus-use-8b0ae74337c38828f34f74e6e7a8eef10090e122ab782d33db0efbec84f3d6d4.js",
+                    "hotkeys-js": "https://assets.postcard.page/assets/hotkeys-js-19bc03ee185b6c215059c5385a91c1e975d3dc65d9d39035289d98227616cd62.js",
+                    "trix": "https://assets.postcard.page/assets/trix-1563ff9c10f74e143b3ded40a8458497eaf2f87a648a5cbbfebdb7dec3447a5e.js",
+                    "controllers/application": "https://assets.postcard.page/assets/controllers/application-6f2796a0b23438c281d75f70cd29209d5c484967b02213986cf860ebc6f2a0a3.js",
+                    "controllers/autosave_controller": "https://assets.postcard.page/assets/controllers/autosave_controller-b43467a7b0212c9ae5dc2521abcc587dab2571de4e28825aa12907f06c28d2c2.js",
+                    "controllers/autosave_status_controller": "https://assets.postcard.page/assets/controllers/autosave_status_controller-eedf0383114d44617886d67f615ba027bd16813aa295764234845f1804666629.js",
+                    "controllers/color_picker_controller": "https://assets.postcard.page/assets/controllers/color_picker_controller-f21f69d47ada7890f4937870f94fe5e2a3c49a80d573bf50430959be0a25aec0.js",
+                    "controllers/copy_controller": "https://assets.postcard.page/assets/controllers/copy_controller-e1a39c04280c89e9c1913d10d504b79430f04332afc4f9c1f5dafad6a5bc5241.js",
+                    "controllers/editable_controller": "https://assets.postcard.page/assets/controllers/editable_controller-d9f9a7089cc2110f8f156c18e14b004671213d81d1ad1b3f773b8669d87c3fde.js",
+                    "controllers": "https://assets.postcard.page/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js",
+                    "controllers/linkout_controller": "https://assets.postcard.page/assets/controllers/linkout_controller-5ff910df47fce5700d7c67715a96467b62dc8c242bee074dea2e8020ea8013a2.js",
+                    "controllers/loading_controller": "https://assets.postcard.page/assets/controllers/loading_controller-aa99ae671ebff53f06cd6013baa979b18d674347c374a9d7a9bd74d0728e9564.js",
+                    "controllers/openmodal_controller": "https://assets.postcard.page/assets/controllers/openmodal_controller-c53563917e8e293818c5ae23dded9329835749e6dc50c083da34860caef2a6ac.js",
+                    "controllers/overlay_controller": "https://assets.postcard.page/assets/controllers/overlay_controller-ed23f72ddff55b15a7d7325b6bc1792dfcfce32af3d09428b089e6079a09d069.js",
+                    "controllers/submit_controller": "https://assets.postcard.page/assets/controllers/submit_controller-4a77c99c102a0dfa9d71a2848cbbb00648cd6edc212b63e25402ea05d550362b.js",
+                    "controllers/upgrade_controller": "https://assets.postcard.page/assets/controllers/upgrade_controller-536bb025eb5932aafb218167f633891036735984ccea9a3f16ff96e7bda6d291.js",
+                    "controllers/upload_controller": "https://assets.postcard.page/assets/controllers/upload_controller-f6d5fe50d7014a568f91fc955a25424a6e2a2f8c815187da7a2978c263f24846.js"
+                }
+            }</script>
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/application-e5a1beee0f4af93aec7b106fcc803c0d9b376bb52391c605f675882614cc41a6.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/turbo.min-6d55e406d913e0952fed2265f39e12838148732f9c3e8c6e026d7b76e2faeea4.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/@hotwired--stimulus-fecc3ec70c869283b134b7ae939fb6c94a16e6ae57286ffe3c6181f2a747cbae.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/ahoy.js-3cacce50c4d45900e2a1869755ac97640a12385e905c7a1db9dbf9bbb33191db.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/stimulus-notification-f7fe7107d7482bb657b9d4682f8878b23e2b720ebfc496785acb0aee67f70b8f.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/stimulus-use-8b0ae74337c38828f34f74e6e7a8eef10090e122ab782d33db0efbec84f3d6d4.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/application-6f2796a0b23438c281d75f70cd29209d5c484967b02213986cf860ebc6f2a0a3.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/autosave_controller-b43467a7b0212c9ae5dc2521abcc587dab2571de4e28825aa12907f06c28d2c2.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/autosave_status_controller-eedf0383114d44617886d67f615ba027bd16813aa295764234845f1804666629.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/color_picker_controller-f21f69d47ada7890f4937870f94fe5e2a3c49a80d573bf50430959be0a25aec0.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/copy_controller-e1a39c04280c89e9c1913d10d504b79430f04332afc4f9c1f5dafad6a5bc5241.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/editable_controller-d9f9a7089cc2110f8f156c18e14b004671213d81d1ad1b3f773b8669d87c3fde.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/linkout_controller-5ff910df47fce5700d7c67715a96467b62dc8c242bee074dea2e8020ea8013a2.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/loading_controller-aa99ae671ebff53f06cd6013baa979b18d674347c374a9d7a9bd74d0728e9564.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/openmodal_controller-c53563917e8e293818c5ae23dded9329835749e6dc50c083da34860caef2a6ac.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/overlay_controller-ed23f72ddff55b15a7d7325b6bc1792dfcfce32af3d09428b089e6079a09d069.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/submit_controller-4a77c99c102a0dfa9d71a2848cbbb00648cd6edc212b63e25402ea05d550362b.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/upgrade_controller-536bb025eb5932aafb218167f633891036735984ccea9a3f16ff96e7bda6d291.js">
+        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/upload_controller-f6d5fe50d7014a568f91fc955a25424a6e2a2f8c815187da7a2978c263f24846.js">
+        <script src="https://assets.postcard.page/assets/es-module-shims.min-8dfd11ce9fd296465c43a18e78ab086e7b49caa30c47c878316bd67fee8790b1.js" async="async" data-turbo-track="reload"></script>
+        <script type="module">
+            import "application"
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <style>
+            body {
+                padding: env(safe-area-inset-top, 60px) env(safe-area-inset-right, 20px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 20x);
+            }
+        }
+    </style>
+    <meta charset="UTF-8"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://kyle-ferrigan.postcard.page/posts.rss"/>
+    <title>Kyle Ferrigan</title>
+    <link rel="icon" type="image/png" href="https://a.postcard.page/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUIxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e6b2947c45b5d9348ed70754b9820c1387382663/icon.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="https://a.postcard.page/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUIxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e6b2947c45b5d9348ed70754b9820c1387382663/icon.png">
+    <meta name="description" content="About MeHi! 👋 I am Software Engineer that enjoys coding to better people lives. I am proud to hold a Bachelor of Science degree in Computer Science from North Central College, which granted me a skillset to make technical ideas into reality. I was also privileged to work at Capgemini which improved">
+    <link rel="canonical" href="https://kyle-ferrigan.postcard.page/">
+    <meta property="og:title" content="Kyle Ferrigan">
+    <meta property="og:description" content="About MeHi! 👋 I am Software Engineer that enjoys coding to better people lives. I am proud to hold a Bachelor of Science degree in Computer Science from North Central College, which granted me a skillset to make technical ideas into reality. I was also privileged to work at Capgemini which improved">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kyle-ferrigan.postcard.page/">
+    <meta property="og:image" content="https://kyle-ferrigan.postcard.page/og/1709572626">
+    <meta property="og:site_name" content="Kyle Ferrigan">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kyle Ferrigan">
+    <meta name="twitter:description" content="About MeHi! 👋 I am Software Engineer that enjoys coding to better people lives. I am proud to hold a Bachelor of Science degree in Computer Science from North Central College, which granted me a skillset to make technical ideas into reality. I was also privileged to work at Capgemini which improved">
+    <meta name="twitter:image" content="https://kyle-ferrigan.postcard.page/og/1709572626">
+</head>
+<body class="h-full min-h-screen bg-white">
+    <style>
+        .btn-primary {
+            background-color: #00a3d7;
+            color: #111111;
+            border-color: #00a3d7;
+        }
 
-<h1>Kyle Ferrigan</h1>
-<p>Hi there! This page is WIP!</p>
+        .text-on-accent {
+            color: #111111;
+        }
 
+        .badge {
+            background-color: #00a3d7;
+            color: #111111
+        }
+
+        .spinner {
+            color: #111111 !important;
+        }
+
+        .badge-secondary {
+            border-color: #00a3d7;
+            color: #111111;
+        }
+
+        .prose a {
+            text-decoration-color: #00a3d7;
+        }
+
+        .bg-accent {
+            background-color: #00a3d7;
+        }
+
+        .text-accent {
+            color: #00a3d7;
+        }
+
+        .border-accent {
+            border-color: #00a3d7
+        }
+
+        .hover\:border-accent:hover {
+            border-color: #00a3d7
+        }
+
+        .btn-secondary {
+            border-color: #00a3d7;
+            color: #111111;
+        }
+
+        .text-accent-if-contrast {
+            text-decoration: underline;
+            text-decoration-color: #00a3d7;
+        }
+
+        .link {
+            color: #111111;
+            text-decoration-color: #00a3d7;
+        }
+
+        .prose blockquote, .trix-content blockquote {
+            border-color: #00a3d7 !important;
+        }
+
+        .form-input:focus {
+            --tw-ring-color: rgb(0, 163, 215) !important;
+            border-color: rgb(0, 163, 215) !important;
+        }
+
+        .form-input-inline {
+            caret-color: #00a3d7;
+        }
+
+        .turbo-progress-bar {
+            background-color: #00a3d7;
+        }
+    </style>
+    <div class="flex flex-col w-full min-h-screen bg-white">
+        <div class="flex-grow">
+            <div>
+                <picture>
+                    <source type="image/webp" srcset="
+            https://a.postcard.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdFIxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9d98167e9cea0b30e66d0764b774dad7818ec1d4/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2REdOdmJuWmxjblE2Q1hkbFluQTZGSEpsYzJsNlpWOTBiMTlzYVcxcGRGc0hhUUtRQVRBPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--90729e14c089e4a577be637c41e92589d0aac616/Mac_M2_Ultra_Night.png 400w,
+            https://a.postcard.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdFIxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9d98167e9cea0b30e66d0764b774dad7818ec1d4/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2REdOdmJuWmxjblE2Q1hkbFluQTZGSEpsYzJsNlpWOTBiMTlzYVcxcGRGc0hhUUlnQXpBPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94218e22b6818d783100f6b4e5bef751db28961a/Mac_M2_Ultra_Night.png 800w,
+            https://a.postcard.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdFIxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9d98167e9cea0b30e66d0764b774dad7818ec1d4/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2REdOdmJuWmxjblE2Q1hkbFluQTZGSEpsYzJsNlpWOTBiMTlzYVcxcGRGc0hhUUpBQmpBPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--03e86e16372359f47c33aafb63f8929d1275a5a4/Mac_M2_Ultra_Night.png 1600w,
+            https://a.postcard.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdFIxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9d98167e9cea0b30e66d0764b774dad7818ec1d4/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2REdOdmJuWmxjblE2Q1hkbFluQTZGSEpsYzJsNlpWOTBiMTlzYVcxcGRGc0hhUUtBRERBPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--93c188aba8909297ddd5204677b7aa2eb8176206/Mac_M2_Ultra_Night.png 3200w,
+            https://a.postcard.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdFIxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9d98167e9cea0b30e66d0764b774dad7818ec1d4/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2REdOdmJuWmxjblE2Q1hkbFluQTZGSEpsYzJsNlpWOTBiMTlzYVcxcGRGc0hhUUlBR1RBPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d937dd1529328a7602f026bcbda33187a725464d/Mac_M2_Ultra_Night.png 6400w,
+        " sizes="100vw">
+                    <img class="object-cover w-full bg-white h-36 lg:h-60" src="https://a.postcard.page/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdFIxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9d98167e9cea0b30e66d0764b774dad7818ec1d4/Mac_M2_Ultra_Night.png" alt="Cover photo for Kyle Ferrigan" srcset="
+            https://a.postcard.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdFIxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9d98167e9cea0b30e66d0764b774dad7818ec1d4/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--b4a9a5323e1b4cc08aca2b1fff664328dd94365a/Mac_M2_Ultra_Night.png 400w,
+            https://a.postcard.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdFIxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9d98167e9cea0b30e66d0764b774dad7818ec1d4/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJZ0F6QT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--62c68f2c53106694f871502e8538341594bf37bb/Mac_M2_Ultra_Night.png 800w,
+            https://a.postcard.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdFIxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9d98167e9cea0b30e66d0764b774dad7818ec1d4/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFKQUJqQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--40f799a881a75d8e1668979f5a284fb03453a2f2/Mac_M2_Ultra_Night.png 1600w,
+            https://a.postcard.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdFIxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9d98167e9cea0b30e66d0764b774dad7818ec1d4/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLQUREQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--2388c6a89c93110d872176e3525187d04995e2e1/Mac_M2_Ultra_Night.png 3200w,
+            https://a.postcard.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdFIxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9d98167e9cea0b30e66d0764b774dad7818ec1d4/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUdUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--d92a1b9f9182c1c313926edbbf8bb71c98e11190/Mac_M2_Ultra_Night.png 6400w,
+      " sizes="100vw">
+                </picture>
+            </div>
+            <!-- Body -->
+            <div class="flex items-center justify-between public-page-container">
+                <div class="-mt-16">
+                    <a class="flex" href="/">
+                        <picture>
+                            <source type="image/webp" srcset="https://a.postcard.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdEYxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2690addf790fc47b2db7edc121fb2c574dd19389/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2REdOdmJuWmxjblE2Q1hkbFluQTZFM0psYzJsNlpWOTBiMTltYVd4c1d3aHBBWkJwQVpCN0Jqb0pZM0p2Y0RvT1lYUjBaVzUwYVc5dSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--3439a2823f2bcef15a0ef20c815e0899b4091f7b/tempImagez5NqSF.png,
+      https://a.postcard.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdEYxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2690addf790fc47b2db7edc121fb2c574dd19389/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2REdOdmJuWmxjblE2Q1hkbFluQTZFM0psYzJsNlpWOTBiMTltYVd4c1d3aHBBaUFCYVFJZ0FYc0dPZ2xqY205d09nNWhkSFJsYm5ScGIyND0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--be2dad2c32b1f5037c0ab507fb0787d08aa431f3/tempImagez5NqSF.png 2x,
+      https://a.postcard.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdEYxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2690addf790fc47b2db7edc121fb2c574dd19389/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2REdOdmJuWmxjblE2Q1hkbFluQTZFM0psYzJsNlpWOTBiMTltYVd4c1d3aHBBckFCYVFLd0FYc0dPZ2xqY205d09nNWhkSFJsYm5ScGIyND0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bd0b41502b7592adcde7644598cbfadbe1f5947c/tempImagez5NqSF.png 3x">
+                            <img class="h-32 w-32 rounded-full ring-4 ring-white sm:h-36 sm:w-36 bg-white" width="144" height="144" src="https://a.postcard.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdEYxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2690addf790fc47b2db7edc121fb2c574dd19389/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2hwQVpCcEFaQjdCam9KWTNKdmNEb09ZWFIwWlc1MGFXOXUiLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--4e0ba7dad8085a99b20d54d5ffb128083de061b5/tempImagez5NqSF.png" alt="Kyle Ferrigan" srcset="https://a.postcard.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdEYxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2690addf790fc47b2db7edc121fb2c574dd19389/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2hwQVpCcEFaQjdCam9KWTNKdmNEb09ZWFIwWlc1MGFXOXUiLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--4e0ba7dad8085a99b20d54d5ffb128083de061b5/tempImagez5NqSF.png,
+            https://a.postcard.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdEYxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2690addf790fc47b2db7edc121fb2c574dd19389/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2hwQWlBQmFRSWdBWHNHT2dsamNtOXdPZzVoZEhSbGJuUnBiMjQ9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b8fc3386bc8d57c0705e64291eb73f2c0ad89faf/tempImagez5NqSF.png 2x,
+            https://a.postcard.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdEYxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2690addf790fc47b2db7edc121fb2c574dd19389/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2hwQXJBQmFRS3dBWHNHT2dsamNtOXdPZzVoZEhSbGJuUnBiMjQ9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--2df9c065db1414c719c60f9e81d75a31c860621c/tempImagez5NqSF.png 3x"/>
+                        </picture>
+                    </a>
+                </div>
+                <div></div>
+            </div>
+            <div class="mt-6 public-page-container">
+                <h1 class="page-title">Kyle Ferrigan
+    </h1>
+            </div>
+            <div class="public-page-container pt-2" data-controller="linkout">
+                <div class="prose">
+                    <h2>About Me</h2>
+                    <h3>Hi! 👋 </h3>
+                    <div>I am Software Engineer that enjoys coding to better people lives. I am proud to hold a Bachelor of Science degree in Computer Science from North Central College, which granted me a skillset to make technical ideas into reality. I was also privileged to work at Capgemini which improved my Java skillset working alongside incredible co-workers. </div>
+                    <h2>Skillsets</h2>
+                    <div>My core experience lies with Java, but I have experience with many additional languages and technologies. Notable languages &amp;technologies that I have developed in/used include: JavaScript, SQL (NoSQL, MySQL, MariaDB), Amazon Web Services (AWS), Agile Methodology, Python, Swift,  C++, &amp;C. </div>
+                    <h2>Experience</h2>
+                    <div>
+                        After achieving my degree I embarked on a rewarding journey as a Software Engineer at Capgemini. While there, I honed my expertise in Java programming by successfully delivering projects that required both technical proficiency and attention to detail. Additionally, I enhanced my Python and JavaScript skills while working on an internal database project.<br>
+                        <br>
+                        I also am proud to have developed and published an app to the iOS App Store under my name. It was a fun and rewarding road to go down as I learned how a mobile app gets created from start to finish as well as have a polished app that I use often on the App Store. From the art assets I made, to coding all the behaviors and UI, it was so fun to make that I have another app in the works as you read this. If you want to check it out yourself, here is a <a href="https://apps.apple.com/us/app/convert-unit-converter-app/id1513264999">link</a>
+                        !<br>
+                        <br>I have also acquired extensive networking experience through both academic and personal projects. My projects included administering a Multi-AP networks, managing domains, creating &amp;renewing SSL certificates, implementing reverse proxies, configuring DHCP Servers, establishing VLANs, and setting up recursive DNS servers. These hands-on projects have deepened my understanding of networking while creating blazing fast networks with seamless and secure connectivity.
+                    </div>
+                    <h2>Personal Life</h2>
+                    <div>In my free time I love learning about technology and how it works, along with building PC's, learning about the latest and greatest Cars, and playing golf (both regular and frisbee golf!).</div>
+                </div>
+                <div id="after-body-content"></div>
+            </div>
+        </div>
+        <div>
+            <div class="w-full py-12 mt-12 bg-gray-050">
+                <div class="public-page-container">
+                    <form action="/" accept-charset="UTF-8" method="post">
+                        <input type="hidden" name="authenticity_token" value="7KyCvTpTL-uWBGHnP8rbb28mNYv-DLCEmVMLTxKkfSHVFTEdx-LiurnlpEIBFSBeMc9-OVlLnLuZcjicEDgmfw" autocomplete="off"/>
+                        <div id="a_comment_body_hp_1709577160">
+                            <style type="text/css" media="screen" scoped="scoped">
+                                [id='a_comment_body_hp_1709577160'] {
+                                    display: none;
+                                }
+                            </style>
+                            <label for="a_comment_body">Do not fill in this field</label>
+                            <textarea name="a_comment_body" id="a_comment_body"></textarea>
+                        </div>
+                        <label class="form-label" for="email_address_email">Subscribe to my updates</label>
+                        <div class="mt-2 sm:flex sm:items-center">
+                            <div class="w-full">
+                                <input class="form-input" type="email" placeholder="hello@example.com" name="email_address[email]" id="email_address_email"/>
+                            </div>
+                            <button name="button" type="submit" class="btn btn-primary mt-2 sm:mt-0 w-full inline-flex sm:w-auto ml-0 sm:ml-2" data-controller="loading" data-loading-target="button" data-action="turbo:submit-start@document->loading#displayLoading" \>
+                                Subscribe
+
+
+    
+                                <svg data-loading-target="loading" class="hidden w-5 h-5 ml-3 -mr-1 text-gray-050 animate-spin spinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="w-full py-8 bg-opacity-75 bg-gray-075">
+                <footer class="public-page-container">
+                    <p class="mt-0 text-xs text-gray-700 text-center">
+                        Made with <a class="underline" href="https://postcard.page/?utm_campaign=Made+with+Postcard&amp;utm_source=kyle-ferrigan.postcard.page">Postcard</a>
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div aria-live="assertive" class="fixed inset-0 z-50 flex items-end px-4 py-6 pointer-events-none sm:p-6 sm:items-start">
+        <div class="flex flex-col items-center w-full space-y-4 sm:items-end" id="flash_messages"></div>
+    </div>
 </body>
 </html>
