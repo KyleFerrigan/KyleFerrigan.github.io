@@ -1,96 +1,26 @@
 <!DOCTYPE html>
 <html class="h-full bg-white" lang="en">
     <head>
-        <meta name="csrf-param" content="authenticity_token"/>
-        <meta name="csrf-token" content="rpH1x0HfJd8Lf8z9gOE2hpT4RdCyXqfRWsIYdbddGBn47AZXiiRFEaV_-QvTKZYdp7PeZjcBjPKtxDbRBs_2LA"/>
+        <!-- Postcard Style Sheets -->
         <link rel="stylesheet" href="https://assets.postcard.page/assets/tailwind-717aa5855d3b54b495cc734abec3cec48cbf9472b5f0d3a2bbcd81c484e36435.css" data-turbo-track="reload"/>
         <link rel="stylesheet" href="https://assets.postcard.page/assets/inter-font-56e5c1eebdf3854ae2085a990f3d286d874f8f5a65c4390ab1e931fce60cd034.css" data-turbo-track="reload"/>
         <link rel="stylesheet" href="https://assets.postcard.page/assets/application.tailwind-f8a070e2276114e1a5193f5cd06030bd608bba1d624e5998fbfea6cfc23c9ef5.css" data-turbo-track="reload"/>
-        <script>
-            window.process = {
-                env: {}
-            }
-        </script>
-        <script type="importmap" data-turbo-track="reload">
-            {
-                "imports": {
-                    "application": "https://assets.postcard.page/assets/application-e5a1beee0f4af93aec7b106fcc803c0d9b376bb52391c605f675882614cc41a6.js",
-                    "dashboard": "https://assets.postcard.page/assets/dashboard-81782f83c5d002f816c94d9ec67a21a5fb6aa22260a2ac07bcea9fe8f4a1cf17.js",
-                    "@hotwired/turbo-rails": "https://assets.postcard.page/assets/turbo.min-6d55e406d913e0952fed2265f39e12838148732f9c3e8c6e026d7b76e2faeea4.js",
-                    "@hotwired/stimulus": "https://assets.postcard.page/assets/@hotwired--stimulus-fecc3ec70c869283b134b7ae939fb6c94a16e6ae57286ffe3c6181f2a747cbae.js",
-                    "@hotwired/stimulus-loading": "https://assets.postcard.page/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js",
-                    "@rails/actiontext": "https://assets.postcard.page/assets/actiontext-28c61f5197c204db043317a8f8826a87ab31495b741f854d307ca36122deefce.js",
-                    "tailwindcss-stimulus-components": "https://assets.postcard.page/assets/tailwindcss-stimulus-components-acdb5a32ab7451a3741d67f23c0c0338a0e867021915db3f323f19c8f601a6ac.js",
-                    "ahoy.js": "https://assets.postcard.page/assets/ahoy.js-3cacce50c4d45900e2a1869755ac97640a12385e905c7a1db9dbf9bbb33191db.js",
-                    "clipboard": "https://assets.postcard.page/assets/clipboard-90e4dc523c2b03c3455a0fbd8a56f76fbcf720363dc8b8d12c12b6eeb7b4bd97.js",
-                    "stimulus-notification": "https://assets.postcard.page/assets/stimulus-notification-f7fe7107d7482bb657b9d4682f8878b23e2b720ebfc496785acb0aee67f70b8f.js",
-                    "@rails/activestorage": "https://assets.postcard.page/assets/@rails--activestorage-5c8d84ec504a53ac574def28e80b50a2b9a1e2b8fcb65e75cea0887a9212ddd8.js",
-                    "local-time-cdn": "https://assets.postcard.page/assets/local-time-cdn-49233f9905a09c73951110621c274f98384e683ef4422802c596d845ab403231.js",
-                    "lodash.debounce": "https://assets.postcard.page/assets/lodash.debounce-2156bf30ba16dc64d0a818939b8e57cdf77d41a745a42acdeb675024d8b8190d.js",
-                    "stimulus-dropdown": "https://assets.postcard.page/assets/stimulus-dropdown-c22aa432c058a134a0fcd4dfd4cdaf627a67b13b47000c246b959c8811e457b5.js",
-                    "stimulus-use": "https://assets.postcard.page/assets/stimulus-use-8b0ae74337c38828f34f74e6e7a8eef10090e122ab782d33db0efbec84f3d6d4.js",
-                    "hotkeys-js": "https://assets.postcard.page/assets/hotkeys-js-19bc03ee185b6c215059c5385a91c1e975d3dc65d9d39035289d98227616cd62.js",
-                    "trix": "https://assets.postcard.page/assets/trix-1563ff9c10f74e143b3ded40a8458497eaf2f87a648a5cbbfebdb7dec3447a5e.js",
-                    "controllers/application": "https://assets.postcard.page/assets/controllers/application-6f2796a0b23438c281d75f70cd29209d5c484967b02213986cf860ebc6f2a0a3.js",
-                    "controllers/autosave_controller": "https://assets.postcard.page/assets/controllers/autosave_controller-b43467a7b0212c9ae5dc2521abcc587dab2571de4e28825aa12907f06c28d2c2.js",
-                    "controllers/autosave_status_controller": "https://assets.postcard.page/assets/controllers/autosave_status_controller-eedf0383114d44617886d67f615ba027bd16813aa295764234845f1804666629.js",
-                    "controllers/color_picker_controller": "https://assets.postcard.page/assets/controllers/color_picker_controller-f21f69d47ada7890f4937870f94fe5e2a3c49a80d573bf50430959be0a25aec0.js",
-                    "controllers/copy_controller": "https://assets.postcard.page/assets/controllers/copy_controller-e1a39c04280c89e9c1913d10d504b79430f04332afc4f9c1f5dafad6a5bc5241.js",
-                    "controllers/editable_controller": "https://assets.postcard.page/assets/controllers/editable_controller-d9f9a7089cc2110f8f156c18e14b004671213d81d1ad1b3f773b8669d87c3fde.js",
-                    "controllers": "https://assets.postcard.page/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js",
-                    "controllers/linkout_controller": "https://assets.postcard.page/assets/controllers/linkout_controller-5ff910df47fce5700d7c67715a96467b62dc8c242bee074dea2e8020ea8013a2.js",
-                    "controllers/loading_controller": "https://assets.postcard.page/assets/controllers/loading_controller-aa99ae671ebff53f06cd6013baa979b18d674347c374a9d7a9bd74d0728e9564.js",
-                    "controllers/openmodal_controller": "https://assets.postcard.page/assets/controllers/openmodal_controller-c53563917e8e293818c5ae23dded9329835749e6dc50c083da34860caef2a6ac.js",
-                    "controllers/overlay_controller": "https://assets.postcard.page/assets/controllers/overlay_controller-ed23f72ddff55b15a7d7325b6bc1792dfcfce32af3d09428b089e6079a09d069.js",
-                    "controllers/submit_controller": "https://assets.postcard.page/assets/controllers/submit_controller-4a77c99c102a0dfa9d71a2848cbbb00648cd6edc212b63e25402ea05d550362b.js",
-                    "controllers/upgrade_controller": "https://assets.postcard.page/assets/controllers/upgrade_controller-536bb025eb5932aafb218167f633891036735984ccea9a3f16ff96e7bda6d291.js",
-                    "controllers/upload_controller": "https://assets.postcard.page/assets/controllers/upload_controller-f6d5fe50d7014a568f91fc955a25424a6e2a2f8c815187da7a2978c263f24846.js"
-                }
-            }
-        </script>
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/application-e5a1beee0f4af93aec7b106fcc803c0d9b376bb52391c605f675882614cc41a6.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/turbo.min-6d55e406d913e0952fed2265f39e12838148732f9c3e8c6e026d7b76e2faeea4.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/@hotwired--stimulus-fecc3ec70c869283b134b7ae939fb6c94a16e6ae57286ffe3c6181f2a747cbae.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/ahoy.js-3cacce50c4d45900e2a1869755ac97640a12385e905c7a1db9dbf9bbb33191db.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/stimulus-notification-f7fe7107d7482bb657b9d4682f8878b23e2b720ebfc496785acb0aee67f70b8f.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/stimulus-use-8b0ae74337c38828f34f74e6e7a8eef10090e122ab782d33db0efbec84f3d6d4.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/application-6f2796a0b23438c281d75f70cd29209d5c484967b02213986cf860ebc6f2a0a3.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/autosave_controller-b43467a7b0212c9ae5dc2521abcc587dab2571de4e28825aa12907f06c28d2c2.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/autosave_status_controller-eedf0383114d44617886d67f615ba027bd16813aa295764234845f1804666629.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/color_picker_controller-f21f69d47ada7890f4937870f94fe5e2a3c49a80d573bf50430959be0a25aec0.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/copy_controller-e1a39c04280c89e9c1913d10d504b79430f04332afc4f9c1f5dafad6a5bc5241.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/editable_controller-d9f9a7089cc2110f8f156c18e14b004671213d81d1ad1b3f773b8669d87c3fde.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/linkout_controller-5ff910df47fce5700d7c67715a96467b62dc8c242bee074dea2e8020ea8013a2.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/loading_controller-aa99ae671ebff53f06cd6013baa979b18d674347c374a9d7a9bd74d0728e9564.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/openmodal_controller-c53563917e8e293818c5ae23dded9329835749e6dc50c083da34860caef2a6ac.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/overlay_controller-ed23f72ddff55b15a7d7325b6bc1792dfcfce32af3d09428b089e6079a09d069.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/submit_controller-4a77c99c102a0dfa9d71a2848cbbb00648cd6edc212b63e25402ea05d550362b.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/upgrade_controller-536bb025eb5932aafb218167f633891036735984ccea9a3f16ff96e7bda6d291.js">
-        <link rel="modulepreload" href="https://assets.postcard.page/assets/controllers/upload_controller-f6d5fe50d7014a568f91fc955a25424a6e2a2f8c815187da7a2978c263f24846.js">
-        <script src="https://assets.postcard.page/assets/es-module-shims.min-8dfd11ce9fd296465c43a18e78ab086e7b49caa30c47c878316bd67fee8790b1.js" async="async" data-turbo-track="reload"></script>
-        <script type="module">
-            import "application"
-        </script>
+        
+        <!-- Meta Info -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        <style>
-            body {
-                padding: env(safe-area-inset-top, 60px) env(safe-area-inset-right, 20px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 20x);
-            }
-        </style>
         <meta charset="UTF-8"/>
         <meta name="theme-color" content="#ffffff"/>
-        <link rel="alternate" type="application/rss+xml" title="RSS" href="https://kyle-ferrigan.postcard.page/posts.rss"/>
         <title>Kyle Ferrigan</title>
+
+        <!-- Link Info -->
         <link rel="icon" type="image/png" href="https://a.postcard.page/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUIxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e6b2947c45b5d9348ed70754b9820c1387382663/icon.png">
         <link rel="apple-touch-icon-precomposed" type="image/png" href="https://a.postcard.page/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUIxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e6b2947c45b5d9348ed70754b9820c1387382663/icon.png">
         <meta name="description" content="Hi there! 👋  I am Software Engineer that enjoys coding to better peoples lives">
-        <link rel="canonical" href="https://kyle-ferrigan.postcard.page/">
+        <link rel="canonical" href="https://profile.kyleferrigan.com">
         <meta property="og:title" content="Kyle Ferrigan">
         <meta property="og:description" content="Hi there! 👋  I am Software Engineer that enjoys coding to better peoples lives">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://kyle-ferrigan.postcard.page/">
+        <meta property="og:url" content="https://profile.kyleferrigan.com/">
         <meta property="og:image" content="https://kyle-ferrigan.postcard.page/og/1709572626">
         <meta property="og:site_name" content="Kyle Ferrigan">
         <meta name="twitter:card" content="summary_large_image">
@@ -98,7 +28,9 @@
         <meta name="twitter:description" content="Hi there! 👋  I am Software Engineer that enjoys coding to better peoples lives">
         <meta name="twitter:image" content="https://kyle-ferrigan.postcard.page/og/1709572626">
     </head>
+
     <body class="h-full min-h-screen bg-white">
+        <!-- Page Styling -->
         <style>
             .btn-primary {
                 background-color: #00a3d7;
@@ -176,8 +108,11 @@
                 background-color: #00a3d7;
             }
         </style>
+
         <div class="flex flex-col w-full min-h-screen bg-white">
             <div class="flex-grow">
+
+                <!-- Banner Photo -->
                 <div>
                     <picture>
                         <source type="image/webp" srcset="
@@ -196,7 +131,8 @@
                         " sizes="100vw">
                     </picture>
                 </div>
-                <!-- Body -->
+
+                <!-- Profile Photo -->
                 <div class="flex items-center justify-between public-page-container">
                     <div class="-mt-16">
                         <a class="flex" href="/">
@@ -213,6 +149,8 @@
                     <div>
                     </div>
                 </div>
+
+                <!-- Main Page -->
                 <div class="mt-6 public-page-container">
                     <h1 class="page-title">Kyle Ferrigan
                     </h1>
@@ -242,9 +180,6 @@
                     <div id="after-body-content"></div>
                 </div>
             </div>
-        </div>
-        <div aria-live="assertive" class="fixed inset-0 z-50 flex items-end px-4 py-6 pointer-events-none sm:p-6 sm:items-start">
-            <div class="flex flex-col items-center w-full space-y-4 sm:items-end" id="flash_messages"></div>
         </div>
     </body>
 </html>
